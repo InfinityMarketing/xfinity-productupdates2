@@ -8,174 +8,263 @@ if ($lang == "esp") { $esp = 1; } else { $esp = 0; }
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><?php echo (!$esp ? "New Packages || Xfinity Product Updates" : "Nuevos paquetes || Xfinity Producto Update"); ?></title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- CSS 
-        ================================================== -->
-    <!-- Bootstrap 3-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <!-- Template Styles -->
-    <link href="css/style.css" rel="stylesheet" media="screen">
+	<head>
+		<title><?php echo (!$esp ? "New Packages || Xfinity Product Updates 2" : "Nuevos paquetes || Xfinity Producto Update"); ?></title>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- CSS 
+			================================================== -->
+		<!-- Bootstrap 3-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+		<!-- Template Styles -->
+		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
-  
-  <body>
+
+	<body>
 		<!-- NAVBAR
 			==================================================== -->
 		<nav class="navbar navbar-default navbar-fixed-top"> <!--role="navigation"-->
-			<?php if (!$esp) { ?>
-				<div class="language">Language: English | <a href="?lang=esp">Espa&ntilde;ol</a></div>
+			<!-- <?php if (!$esp) { ?>
+	  		<div class="language">Language: English | <a href="?lang=esp">Espa&ntilde;ol</a></div>
 			<?php } else { ?>
-				<div class="language">Language: <a href="?lang=eng">English</a> | Espa&ntilde;ol</div>
-			<?php } ?>
+	  		<div class="language">Language: <a href="?lang=eng">English</a> | Espa&ntilde;ol</div>
+			<?php } ?> -->
 			<div class="container">
 				<div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-			      <span class="sr-only">Toggle navigation</span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			    </button>
-			    <!--Replace text with your app name or logo image-->
-			    <a class="navbar-brand" href="index.php<?php echo (!$esp ? "?lang=eng" : "?lang=esp"); ?>"><img src"http://grfx.cstv.com/schools/mifl/graphics/mifl-11-logo-xfinity2.gif"></a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--Replace text with your app name or logo image-->
+					<a class="navbar-brand" href="index.php<?php echo (!$esp ? "?lang=eng" : "?lang=esp"); ?>"><img class="nav_logo" src="img/White_XFINITY_Logo.png"></a>			    
 			  </div>
-			  
-			  <div class="collapse navbar-collapse navbar-ex1-collapse">
-			  	<a href="index.php<?php echo (!$esp ? "?lang=eng" : "?lang=esp"); ?>"><img src"../img/logo.png"></a>
-			    <ul class="nav navbar-nav">
-			      <li><a href="index.php<?php echo (!$esp ? "?lang=eng" : "?lang=esp"); ?>"><?php echo (!$esp ? "Back Home" : "Regresar a la página principal"); ?></a></li>
-			    </ul>
-			  </div>
-		  </div>
+
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.php"><?php echo (!$esp ? "Introduction" : "Introducci&oacute;n"); ?></a></li>
+						<li><a href="new_packages.php"><?php echo (!$esp ? "New Packages" : "Nuevos Paquetes"); ?></a></li>
+						<li><a href="discontinued.php"><?php echo (!$esp ? "Discontinued Packages" : "Nuevos Paquetes"); ?></a></li>
+						<!-- <li><a onclick="$('#service').animatescroll({padding:71});"><?php echo (!$esp ? "New Services" : "Nuevos Servicios"); ?></a></li> -->
+					</ul>
+				</div>
+			</div>
 	  </nav>
 	  
 		<!-- HEADER
 			================================================== -->	  
 		<div class="visibled">
-			<header style="background: url('img/Hero_Bundle.png'); background-position:center 75px; background-size:100%; background-color:#000000; min-height:0; ">
-				<img src="img/spacer.gif" style="width:100%;" class="spacer">
+			<header style="background:url('img/Hero_Package_Page.png'); background-size: 100%; background-color: #000000; min-height:0;">
+				<img src="img/spacer.png" style="width:100%;" class="spacer">
 			</header>
-		</div>	  
+		</div>
 
-		<div style="width:100%;background-color:#eeeeee;">
+		<div style="width:100%; background-color:#f0f0f2;">
 			<div class="container" style="width:75%; max-width:1410px;">
 				<div class="row">
-					<div class="col-md-6 packages rightline">
-						<div class="gray" style="padding-top:7px;" onclick="$('#triple').animatescroll({padding:71});">
-							<h1><?php echo (!$esp ? "Triple Plays" : "Paquete Triple"); ?></h1>
-							<?php echo (!$esp ? "With" : "con"); ?> XFINITY Voice
-						</div>
-							XFINITY TV<br>
-							+ Internet + Voice<br>
-							<br>
-							<a class="button" href="http://<?php echo (!$esp ? "www." : "es."); ?>xfinity.com/Corporate/Learn/Bundles/bundles.html" target="_blank"><?php echo (!$esp ? "Start Shopping" : "Cómpralo aquí"); ?></a>
-					</div>
-
-					<div class="col-md-6 packages rightline">
-						<div class="gray" style="padding-top:13px;" onclick="$('#double').animatescroll({padding:71});">
-							<h1><?php echo (!$esp ? "Double Plays" : "Paquetes Dobles"); ?></h1>
-						</div>
-						XFINITY TV + Internet<br>
+					<div class="col-md-12 packages">
+						<h3 class="packages_title">Click here to subscribe to one of these new packages.</h3>
 						<br>
-						<br>
-						<a class="button" href="http://<?php echo (!$esp ? "www." : "es."); ?>xfinity.com/cable-internet-packages.html" target="_blank"><?php echo (!$esp ? "Start Shopping" : "Cómpralo aquí"); ?></a>
+						<a class="button_new" href="http://www.xfinity.com" target="_blank"><?php echo (!$esp ? "Subscribe" : "Cómpralo aquí"); ?></a>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<section id="triple2">
+    
+    
+    
+        <section id="">
 			<div class="container" style="padding-top:30px; padding-bottom:50px">
-				<div class="wrapper">
-					<h3 class="xf" style="margin-top:0;"><?php echo (!$esp ? "Triple Plays" : "Paquete Triple"); ?> <span style="font-weight:200;color: rgb(86,83,90)"><?php echo (!$esp ? "with" : "con"); ?> XFINITY Voice</span></h3>
-					<table border="0" cellpadding="0" cellspacing="0">
-						<tr class="bb">
-							<td></td>
-							<td class="price-heading"><p><?php echo (!$esp ? "Price" : "Precio"); ?></p></td>
-						</tr>
-  					<tr>
-    					<td class="channel-name1"><?php echo (!$esp ? "X1 Starter Extreme Triple Play" : "X1 Starter Extreme Paquete Triple"); ?></td>
-    					<td class="price1" rowspan="2">$190.00</td>
-  					</tr>
-  					<tr class="hov bb">
-    					<td colspan="2" class="desc bb"><p><?php echo (!$esp ? "Includes Digital Starter for primary outlet, DVR, HD Technology Fee, Streampix, Extreme 300 Internet, and XFINITY Voice Unlimited." : "lncluye Digital Starter para la conexión primaria, DVR, cargos de technologia HD, Streampix, Extreme 300 Internet, y XFINITY Voice Unlimited."); ?></p></td>
-  					</tr>
-  					<tr>
-    					<td class="channel-name1"><?php echo (!$esp ? "X1 Preferred Extreme Triple Play" : "X1 Preferred Extreme Paquete Triple"); ?></td>
-    					<td class="price1" rowspan="2">$210.00</td>
-  					</tr>
-  					<tr class="hov bb">
-    					<td colspan="2" class="desc bb"><p><?php echo (!$esp ? "Includes Digital Preferred for primary outlet, DVR, HD Technology Fee, STARZ&reg;, Streampix, Extreme 300 Internet, and XFINITY Voice Unlimited." : "lncluye Digital Preferred para la conexión primaria, DVR, cargos de technologia HD, STARZ&reg;, Streampix, Extreme 300 Internet, y XFINITY Voice Unlimited."); ?></p></td>
-  					</tr>
-  					<tr>
-    					<td class="channel-name1"><?php echo (!$esp ? "X1 Premier Extreme Triple Play" : "X1 Premier Extreme Paquete Triple"); ?></td>
-    					<td class="price1" rowspan="2">$240.00</td>
-  					</tr>
-  					<tr class="hov bb">
-    					<td colspan="2" class="desc bb"><p><?php echo (!$esp ? "Includes Digital Premier for primary outlet, DVR, HD Technology Fee, HBO&reg;, SHOWTIME&reg;, CINEMAX&reg;, THE MOVIE CHANNEL&reg;, STARZ&reg;, Streampix, Extreme 300 Internet, and XFINITY Voice Unlimited." : "lncluye Digital Premier para la conexión primaria, DVR, cargos de technologia HD, HBO&reg;, SHOWTIME&reg;, CINEMAX&reg;, THE MOVIE CHANNEL&reg;, STARZ&reg;, Streampix, Extreme 300 Internet, y XFINITY Voice Unlimited."); ?></p></td>
-  					</tr>
-					</table>
-				</div>
+				<h3 class="xf" style="margin-top:0;"><?php echo (!$esp ? "XFINITY Triple Play Packages<sup>1,2</sup>" : ""); ?></h3>
+              
+				<table border="0" cellpadding="0" cellspacing="0">
+	 		      <tr class="bb">
+	    			<td></td>
+	    			<td class="price-heading"><p><?php echo (!$esp ? "Price" : "Precio"); ?></p></td>
+	  			  </tr>
+                  
+                  <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "XF Starter Triple Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$150.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Starter and Streampix® for primary outlet, Blast!® Internet and XFINITY® Voice Unlimited" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup3;</td>
+    				<td class="sure-price">$129.00</td>
+  				  </tr>
+                  
+                  <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "XF Preferred Triple Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$170.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Preferred, STARZ® and Streampix® for primary outlet, HD Technology Fee, Blast!® Internet and XFINITY® Voice Unlimited" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup3;</td>
+    				<td class="sure-price">$149.99</td>
+  				  </tr>
+                  
+                  <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "X1 Preferred Latino Triple Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$190.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Preferred, STARZ®, SHOWTIME®, THE MOVIE CHANNEL™ and Streampix® for primary outlet, HD Technology Fee, Extreme 150 Internet and XFINITY® Voice Unlimited" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup3;</td>
+    				<td class="sure-price">$169.99</td>
+  				  </tr>
+                  
+                   <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "XF Premier Triple Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$210.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Premier and Streampix® for primary outlet, HD Technology Fee, Extreme 150 Internet and XFINITY® Voice Unlimited" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup3;</td>
+    				<td class="sure-price">$189.99</td>
+  				  </tr>
+                  
+                  
+				</table>
+			</div>
+		</section>
+    
+        <section id="">
+			<div class="container" style="padding-top:30px; padding-bottom:50px">
+				<h3 class="xf" style="margin-top:0;"><?php echo (!$esp ? "XFINITY Double Play Packages<sup>1,2</sup>" : ""); ?></h3>
+              
+				<table border="0" cellpadding="0" cellspacing="0">
+	 		      <tr class="bb">
+	    			<td></td>
+	    			<td class="price-heading"><p><?php echo (!$esp ? "Price" : "Precio"); ?></p></td>
+	  			  </tr>
+                  
+                  <!-- PRODUCT BLOCK -->
+                  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "Blast!® Plus" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$94.95</td>
+	  			  </tr>
+	  			  <tr class="hov bb">
+				    <td colspan="2" class="desc bb">
+                      <p><?php echo (!$esp ? "Includes Digital Economy and Streampix® for primary outlet and Blast!® Internet" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  
+                  <!-- PRODUCT BLOCK -->
+                  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "Internet Plus" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$74.95</td>
+	  			  </tr>
+	  			  <tr class="hov bb">
+				    <td colspan="2" class="desc bb">
+                      <p><?php echo (!$esp ? "Includes Limited Basic, choice of HBO® or SHOWTIME®, Streampix®, a standard definition digital converter and remote for the primary outlet and Performance Internet" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  
+                   <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "XF Starter Double Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$130.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Starter and Streampix® for primary outlet and Blast!® Internet" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup2;</td>
+    				<td class="sure-price">$109.99</td>
+  				  </tr>
+                  
+                  <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "XF Preferred Double Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$150.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Preferred, STARZ® and Streampix® for primary outlet, HD Technology Fee and Blast!® Internet" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup2;</td>
+    				<td class="sure-price">$129.99</td>
+  				  </tr>
+                  
+                  <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "XF Preferred Plus Double Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$170.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Preferred, STARZ® and Streampix® for primary outlet, HD Technology Fee and Blast!® Internet" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup2;</td>
+    				<td class="sure-price">$149.99</td>
+  				  </tr>
+                  
+                  <!-- SURE PRICE PRODUCT BLOCK -->
+	  			  <tr>
+	    			<td class="channel-name1"><?php echo (!$esp ? "XF Premier Double Play" : ""); ?></td>
+	    			<td class="price1" rowspan="2">$190.00</td>
+	  			  </tr>
+	  			  <tr class="hov">
+				    <td colspan="2" class="desc ">
+                      <p><?php echo (!$esp ? "Includes Digital Premier and Streampix® for primary outlet, HD Technology Fee and Blast!® Internet" : ""); ?></p>
+                    </td>
+	  			  </tr>
+                  <tr class="sp-w bb">
+    				<td class="sp-title">SurePrice&sup2;</td>
+    				<td class="sure-price">$169.99</td>
+  				  </tr>
+                  
+                  
+				</table>
 			</div>
 		</section>
 
-		<section id="double">
-			<div class="row" style="margin-left:0; margin-right:0; background-color:#eeeeee; padding-bottom:50px">
-				<div class="col-md-12" style="padding-left:0; padding-right:0;">
-					<div class="container" style="padding-top:30px;">
-						<div class="wrapper">
-							<h3 class="xf" style="margin-top:0;"><?php echo (!$esp ? "Double Plays" : "Paquetes Dobles"); ?></h3>
-							<table border="0" cellpadding="0" cellspacing="0">
- 								<tr class="bb">
-    							<td></td>
-    							<td class="price-heading"><p><?php echo (!$esp ? "Price" : "Precio"); ?></p></td>
-  							</tr>
-  							<tr>
-    							<td class="channel-name1"><?php echo (!$esp ? "Blast! Pro Plus Double Play" : "Blast! Pro Plus Paquete Doble"); ?></td>
-    							<td class="price1" rowspan="2">$89.95</td>
-  							</tr>
-  							<tr class="hov bb">
-    							<td colspan="2" class="desc bb"><p><?php echo (!$esp ? "Includes Limited Basic, Streampix, and choice of HBO&reg; or SHOWTIME&reg; for primary outlet, and Blast! Pro Internet" : "lncluye Limited Basic, Streampix, y la elección de HBO&reg; o SHOWTIME&reg; para la conexión primaria, y Blast! Pro Internet"); ?></p></td>
-  							</tr>
-  							<tr>
-    							<td class="channel-name1"><?php echo (!$esp ? "X1 Starter Extreme Double Play" : "X1 Starter Extreme Paquete Doble"); ?></td>
-    							<td class="price1" rowspan="2">$170.00</td>
-  							</tr>
-  							<tr class="hov bb">
-    							<td colspan="2" class="desc bb"><p><?php echo (!$esp ? "Includes Digital Starter for primary outlet, DVR, HD Technology Fee, Streampix, and Extreme 300 Internet." : "lncluye Digital Starter para la conexión primaria, DVR, cargos de tecnología HD, Streampix, y Extreme 300 Internet"); ?></p></td>
-  							</tr>
-  							<tr>
-    							<td class="channel-name1"><?php echo (!$esp ? "X1 Preferred Extreme Double Play" : "X1 Preferred Extreme Paquete Doble"); ?></td>
-    							<td class="price1" rowspan="2">$190.00</td>
-  							</tr>
-  							<tr class="hov bb">
-    							<td colspan="2" class="desc bb"><p><?php echo (!$esp ? "Includes Digital Preferred for primary outlet, DVR, HD Technology Fee, STARZ&reg;, Streampix, and Extreme&nbsp;300&nbsp;Internet." : "lncluye Digital Preferred para la conexión primaria, DVR, cargos de tecnología HD, STARZ&reg;, Streampix, y Extreme&nbsp;300&nbsp;Internet"); ?></p></td>
-  							</tr>
-  							<tr>
-    							<td class="channel-name1"><?php echo (!$esp ? "X1 Premier Extreme Double Play" : "X1 Premier Extreme Paquete Doble"); ?></td>
-    							<td class="price1" rowspan="2">$220.00</td>
-  							</tr>
-  							<tr class="hov bb">
-    							<td colspan="2" class="desc bb"><p><?php echo (!$esp ? "Includes Digital Premier for primary outlet, DVR, HD Technology Fee, HBO&reg;, SHOWTIME&reg;, CINEMAX&reg;, THE MOVIE CHANNEL&reg;, STARZ&reg;, Streampix, and Extreme 300 Internet." : "lncluye Digital Premier para la conexión primaria, DVR, cargos de tecnología HD, HBO&reg;, SHOWTIME&reg;, CINEMAX&reg;, THE MOVIE CHANNEL&reg;, STARZ&reg;, Streampix, y Extreme 300 Internet"); ?></p></td>
-  							</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<div class="notes">
-			<br>
-			<br>
-			<?php echo (!$esp ? "Requires a Voice/Data Modem" : "Requiere un módem de Voice/Data"); ?>
+
+		
+
+		<div class="container">
+			<div class="notes">
+		      <ol>
+                <li>Certain services available separately or as a part of other levels of service. Comcast service is subject to Comcast’s standard terms and conditions of service. Unless otherwise specified, prices shown are the monthly charge for the corresponding service, equipment or package. Prices shown do not include applicable taxes, franchise fees, FCC fees, Regulatory Recovery Fee, Public Access fees, other state or local fees or other applicable charges (e.g., per-call toll or international charges). Prices, services and features are subject to change. If you are a video service customer and you own a compatible digital converter or CableCARD device, please call 1-800-XFINITY for pricing information or visit xfinity.com/equipmentpolicy. ©2017 Comcast. All rights reserved.</li>
+                <li>Requires a Voice/Data Modem.</li>
+                <li>SurePrice only available for 12 months to Triple Play customers after a 12 month or 24 month promotional package with SurePrice.</li>
+                <li>SurePrice only available for 12 months for XF Starter Double Play, XF Preferred Double Play, XF Preferred Plus Double Play and XF Premier Double Play customers after 12 month promotional packages.</li>
+              </ol>
+			</div>
 		</div>
 
 		<?php include_once('footer.php'); ?>
-  	
-	</body>
+
+	</body>  	
 </html>

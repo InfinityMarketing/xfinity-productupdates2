@@ -6,22 +6,19 @@
 			<div class="col-md-12 col-centered">
 				<img class"logo-bottom" src="img/logo2.png">
 			</div>
-			
 			<div class="col-md-12 col-centered">
 				<ul>
-					<li><br><br>&copy; 2016 Comcast</li>
 					<li><?php echo (!$esp ? "<a href=\"http://www.xfinity.com/corporate/legal/privacyStatement.html\">Privacy Statement</a>" : "<a href=\"http://es.xfinity.com/corporate/legal/privacyStatement.html\">Declaraci&oacute;n de Privacidad</a>"); ?></li>
 					<li><?php echo (!$esp ? "<a href=\"http://www.xfinity.com/corporate/legal/visitorAgreement.html\">Visitor Agreement</a>" : "<a href=\"http://es.xfinity.com/corporate/legal/visitorAgreement.html\">Acuerdo del Usuario</a>"); ?></li>
 				</ul>
 			</div>
-			
 			<div class="col-md-12">
-				<p class="disclaimer"><?php echo (!$esp ? "Not available in all areas. Restrictions apply. Only available in Central Division &ndash; FL, SC, GA, AL, MS, TN, KY, MI, IN, AR, CH, VA. Taxes and applicable fees additional." : "No disponible en todas las áreas. Se aplican restricciones. Solo disponible en División Central &ndash; FL, SC, GA, AL, MS, TN, KY, MI, IN, AR, CH, VA. Impuestos y tarifas son adicionales."); ?> &copy; 2016 Comcast. <?php echo (!$esp ? "All rights reserved." : "Derechos reservados."); ?></p>
+				<p class="disclaimer"><?php echo (!$esp ? "Not available in all areas. Restrictions apply. Only available in Central Division &mdash; FL, SC, GA, AL, MS, TN, KY, MI, IN, AR, CH, VA. Taxes and applicable fees additional." : "No disponible en todas las áreas. Se aplican restricciones. Solo disponible en División Central - FL, SC, GA, AL, MS, TN, KY, MI, IN, AR, CH, VA. Impuestos y tarifas son adicionales."); ?>
+					 &copy; 2016 Comcast. <?php echo (!$esp ? "All rights reserved." : "Derechos reservados."); ?><p>
 			</div>
 		</div>
 	</div>
-</section>
-	  
+</section>  
 	 
 <!-- JAVASCRIPT
 	================================================== -->
