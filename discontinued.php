@@ -65,7 +65,7 @@ if ($lang == "esp") { $esp = 1; } else { $esp = 0; }
 			</header>
 		</div>	 
     
-		<div style="width:100%; background-color:#f0f0f2;">
+		<div style="width:100%; background-color:#f0f0f2; padding: 30px 0;">
 			<div class="container" style="width:75%; max-width:1410px;">
 				<div class="row">
 					<div class="col-md-12 packages">
@@ -75,11 +75,38 @@ if ($lang == "esp") { $esp = 1; } else { $esp = 0; }
 			</div>
 		</div>
 
-  	<section id="discontinued_products" style="padding: 5% 0 0 0;">
+  	<section id="discontinued_products" style="padding: 5% 0 10% 0;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
                         <div class="dis_box">
+							<h2 class="">XFINITY Quad Play Packages</h2>
+							<p class="d_bb">X1 Starter Quad Triple Play</p>
+                            <p class="d_bb">X1 Preferred Quad Triple Play</p>
+                            <p class="d_bb">X1 Preferred Plus Quad Triple Play</p>
+                            <p class="">X1 Premier Quad Play</p>
+						</div>
+                      
+                      <div class="dis_box">
+							<h2 class="">XFINITY Triple Play Packages</h2>
+							<p class="d_bb">X1 Starter Triple Play</p>
+                            <p class="d_bb">X1 Preferred Triple Play</p>
+                            <p class="d_bb">X1 Preferred Plus Triple Play</p>
+                            <p class="d_bb">X1 Premier Plus Triple Play</p>
+                            <p class="d_bb">X1 Starter Secure Triple Play</p>
+                            <p class="d_bb">X1 Preferred Secure Triple Play</p>
+                            <p class="d_bb">X1 Preferred Plus Secure Triple Play</p>
+                            <p class="">X1 Premier Secure Triple Play</p>
+						</div>
+                      
+                      <div class="dis_box">
+							<h2 class="">XFINITY Double Play Packages</h2>
+							<p class="d_bb">X1 Starter Double Play</p>
+                            <p class="d_bb">X1 Preferred Double Play</p>
+                            <p class="d_bb">X1 Preferred Plus Double Play</p>
+                            <p class="">X1 Premier Plus Double Play</p>
+						</div>
+                      <div class="dis_box">
 							<h2 class="">XFINITY Internet Services</h2>
 							<p class="d_bb">Extreme 300</p>
                             <p class="">Extreme 150</p>
