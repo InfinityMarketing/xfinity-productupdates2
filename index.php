@@ -85,26 +85,37 @@ if ($lang == "esp") { $esp = 1; } else { $esp = 0; }
 				</div>
 
 				<div class="row">
-					<div class="col-md-6 padd lright">
-						<h5><?php echo (!$esp ? "XFINITY Triple Play Packages" : ""); ?></h5>
-						<?php echo (!$esp ? "XF Starter Triple Play" : ""); ?><br>
-						<?php echo (!$esp ? "XF Preferred Triple Play" : ""); ?><br>
-                        <?php echo (!$esp ? "XF Preferred Plus Triple Play" : ""); ?><br>
-                        <?php echo (!$esp ? "XF Premier Triple Play" : ""); ?><br>
+					<div class="col-md-4 padd lright">
+						<h5><?php echo (!$esp ? "XFINITY Quad Play Packages" : ""); ?></h5>
+						<?php echo (!$esp ? "XF Starter Quad Play" : ""); ?><br>
+						<?php echo (!$esp ? "XF Preferred Quad Play" : ""); ?><br>
+                        <?php echo (!$esp ? "XF Preferred Plus Quad Play" : ""); ?><br>
+                        <?php echo (!$esp ? "XF Premier Quad Play" : ""); ?><br>
 						&nbsp;
 					</div>
 
-					<div class="col-md-6 padd">
-						<h5><?php echo (!$esp ? "XFINITY Double Play Packages" : ""); ?></h5>
-						<?php echo (!$esp ? "Blast!® Plus" : ""); ?><br>
-						<?php echo (!$esp ? "Internet Plus" : ""); ?><br>
-						<?php echo (!$esp ? "XF Starter Double Play" : ""); ?><br>
-                        <?php echo (!$esp ? "XF Preferred Double Play" : ""); ?><br>
-                        <?php echo (!$esp ? "XF Preferred Plus Double Play" : ""); ?><br>  
-                        <?php echo (!$esp ? "XF Premier Double Play" : ""); ?><br>
+					<div class="col-md-4 padd lright">
+						<h5><?php echo (!$esp ? "XFINITY Triple Play Packages" : ""); ?></h5>
+						<?php echo (!$esp ? "XF Starter Triple Play" : ""); ?><br>
+						<?php echo (!$esp ? "XF Preferred Triple Play" : ""); ?><br>
+						<?php echo (!$esp ? "XF Preferred Plus Triple Play" : ""); ?><br>
+                        <?php echo (!$esp ? "XF Premier Triple Play" : ""); ?><br>
+                        <?php echo (!$esp ? "XF Starter Secure Triple Play" : ""); ?><br>  
+                        <?php echo (!$esp ? "XF Preferred Secure Triple Play" : ""); ?><br>
+                        <?php echo (!$esp ? "XF Preferred Plus Secure Triple Play" : ""); ?><br>
+                        <?php echo (!$esp ? "XF Premier Secure Triple Play" : ""); ?><br>
 						&nbsp;
 					</div>
                   
+                    <div class="col-md-4 padd">
+                          <h5><?php echo (!$esp ? "XFINITY Double Play Packages" : ""); ?></h5>
+                          <?php echo (!$esp ? "XF Starter Double Play" : ""); ?><br>
+                          <?php echo (!$esp ? "XF Preferred Double Play" : ""); ?><br>
+                          <?php echo (!$esp ? "XF Preferred Plus Double Play" : ""); ?><br>
+                          <?php echo (!$esp ? "XF Premier Double Play" : ""); ?><br>
+                          &nbsp;
+                      </div>
+
 				</div>
 
 				<div class="row" style="text-align:center;">
