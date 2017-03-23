@@ -104,7 +104,7 @@ if ($lang == "esp") { $esp = 1; } else { $esp = 0; }
 							<p class="d_bb">X1 Starter Double Play</p>
                             <p class="d_bb">X1 Preferred Double Play</p>
                             <p class="d_bb">X1 Preferred Plus Double Play</p>
-                            <p class="">X1 Premier Plus Double Play</p>
+                            <p class="">X1 Premier Double Play</p>
 						</div>
                       <div class="dis_box">
 							<h2 class="">XFINITY Internet Services</h2>
